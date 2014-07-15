@@ -14,7 +14,7 @@ Bundled is a custom function to improve the semantics of the color palette:
 
 Which can be used like this:
 
-```scss
+```
 .element {
   background: color($indigo, 400);
 }
