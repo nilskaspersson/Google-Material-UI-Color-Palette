@@ -6,7 +6,7 @@ Use [`map-get($color, $value)`](http://sass-lang.com/documentation/Sass/Script/F
 
 Bundled is a custom function to improve the semantics of the color palette:
 
-```sass
+```
 @function color($color, $value: 500) {
   @return map-get($color, $value);
 }
