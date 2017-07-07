@@ -2,11 +2,11 @@
 Here are Sass maps of the [Color Palette](http://www.google.com/design/spec/style/color.html#color-ui-color-palette) found in the [Google Material UI](http://www.google.com/design/spec/).
 
 ### Usage
-Use `map-get($color, $value)` ([reference](http://sass-lang.com/documentation/Sass/Script/Functions.html#map_get-instance_method)) using the color names and values from the *Material UI* specification. Spaces in color names are replaced with a single dash (-).
+Use `map-get($color, $value)` ([reference](http://sass-lang.com/documentation/Sass/Script/Functions.html#map_get-instance_method)) using the color names and values from the *Material UI* specification. Spaces in color names are replaced with a single hyphen (-).
 
 Bundled is a custom function to improve the semantics of the color palette:
 
-```
+```css
 @function color($color, $value: 500) {
   @return map-get($color, $value);
 }
@@ -14,7 +14,7 @@ Bundled is a custom function to improve the semantics of the color palette:
 
 Which can be used like this:
 
-```
+```css
 .element {
   background: color($indigo, 400);
 }
